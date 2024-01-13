@@ -1,4 +1,8 @@
-# Learning Laravel
+---
+weight: 1
+---
+
+# Request Life Cycle
 
 For full documentation visit [Laravel](https://laravel.com/).
 

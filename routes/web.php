@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+class Service
+{
+    public function __construct()
+    {
+        echo "Test dependency injection";
+    }
+}
+
+Route::get('/', function (Service $service) {
     return view('welcome');
 });
 
