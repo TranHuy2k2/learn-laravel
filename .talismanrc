@@ -35,6 +35,8 @@ fileignoreconfig:
   checksum: 5617d7f06cb5e630db8dc2c19bd5bd7daae4f10d5b12f86eb4c8ffdf2e5119a5
 - filename: database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php
   checksum: a81f62a2666cf86377ce053e8973ab0ed569587638c1e4a0c71ca156007d333f
+- filename: docs/Architecture/RequestLifeCycle.md
+  checksum: a140812004c424027f86bd5144a35cd16fdc77fef158dec827ecd1901adff17f
 - filename: resources/js/bootstrap.js
   checksum: 27eacf24410ce15f00da13f5c621993d30616dc9980c62a89a5a9965d6ad3129
 version: "1.0"

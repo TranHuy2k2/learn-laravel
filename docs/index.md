@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+### Welcome to Learning PHP Laravel
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+_Author: [Tran Huy](https://github.com/TranHuy2k2)_
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is a repository for learning Laravel. It is a collection of notes and code snippets that I have collected while learning Laravel. I hope it will be useful for you.
