@@ -1,6 +1,8 @@
 fileignoreconfig:
 - filename: .env.example
   checksum: a337440b59ce9733300afd263fc16121a535f1cae759e33a794b6bfc6dfdc6ad
+- filename: .github/workflows/mkdocs.yml
+  checksum: 428e553bd4cd43e321819815590bebda19d0915dbd7c649e6c7b9965bcdeec7f
 - filename: app/Http/Kernel.php
   checksum: 9831085032979965ccdb681cc95216aee39f44cc62b2b2bcd666e4d65462ad5a
 - filename: app/Models/User.php
