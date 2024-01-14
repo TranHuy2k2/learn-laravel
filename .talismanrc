@@ -10,7 +10,7 @@ fileignoreconfig:
 - filename: composer.json
   checksum: 867eb52b08f52b298925121b82306494eb339de783ebf6a49c122112644c03b4
 - filename: composer.lock
-  checksum: 5bdb777497f5bead13d73920d2c1af99fb092c928f77d3f22aca8670bcc1be4c
+  checksum: d7ae38f83e0466c3a2a0c70c7880ff28ad8ff233d22653338cad100e279b9348
 - filename: config/app.php
   checksum: 59d30c10a240cbf00269d8b25adf9ef71cf5df488ec6cffa2b75fbb7cba9f180
 - filename: config/auth.php
@@ -37,6 +37,10 @@ fileignoreconfig:
   checksum: a81f62a2666cf86377ce053e8973ab0ed569587638c1e4a0c71ca156007d333f
 - filename: docs/Architecture/RequestLifeCycle.md
   checksum: 0288447696a5996868660963c8bae8920ef97b4c6c933006c476c2353d89eb88
+- filename: docs/Database/GettingStarted.md
+  checksum: 42133e08d26d03c21d674e2fa4e7ad7a41c8320121c4f164f4d8721c80cf88ee
+- filename: docs/EloquentORM/GettingStarted.md
+  checksum: 6563afc08e02d4b5f8a5490a2afeabc2faa572ebf5a9a70c0bf24e20e0ee3e58
 - filename: resources/js/bootstrap.js
   checksum: 27eacf24410ce15f00da13f5c621993d30616dc9980c62a89a5a9965d6ad3129
 - filename: resources/views/login.blade.php
