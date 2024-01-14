@@ -39,8 +39,12 @@ fileignoreconfig:
   checksum: 0288447696a5996868660963c8bae8920ef97b4c6c933006c476c2353d89eb88
 - filename: docs/Database/GettingStarted.md
   checksum: 42133e08d26d03c21d674e2fa4e7ad7a41c8320121c4f164f4d8721c80cf88ee
+- filename: docs/EloquentORM/Factory.md
+  checksum: 7e4486195f2d9367435da197583b5ab83c8caf4215691e092753e51f53780be8
 - filename: docs/EloquentORM/GettingStarted.md
   checksum: 6563afc08e02d4b5f8a5490a2afeabc2faa572ebf5a9a70c0bf24e20e0ee3e58
+- filename: docs/EloquentORM/Relationships.md
+  checksum: d791d55ffe6b94b476edbdf336bf3a33b7a663b7ccb4b3a450426bf539bdfd72
 - filename: resources/js/bootstrap.js
   checksum: 27eacf24410ce15f00da13f5c621993d30616dc9980c62a89a5a9965d6ad3129
 - filename: resources/views/login.blade.php

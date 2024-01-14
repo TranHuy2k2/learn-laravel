@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,12 +26,12 @@ Route::get('/', function (Service $service) {
     return view('welcome');
 });
 
-Route::get("/test", function() {
-    $result = ["test" => "test", "result" => [1, 2, 3, 4, 5]];
+Route::get("/test", function () {
+    $user = User::factory()->make();
+    $result = ["test" => "test", "result" => [1, 2, 3, 4, 5], "user" => $user];
     return response()->json($result);
 });
 
-Route::get("/login", function() {
+Route::get("/login", function () {
     return view("login");
 });
-
