@@ -1,3 +1,7 @@
+---
+weight: 3
+---
+
 # Service Providers
 
 Service providers are the central place of all Laravel application bootstrapping. Your own application, as well as all of Laravel's core services, are bootstrapped via service providers.
