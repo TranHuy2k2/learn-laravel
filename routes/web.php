@@ -28,7 +28,7 @@ Route::get('/', function (Service $service) {
 
 Route::get("/test", function () {
     $user = User::factory()->make();
-    $result = ["test" => "test", "result" => [1, 2, 3, 4, 5], "user" => $user];
+    $result = ["test" => "test", "result" => [1, 2, 3, 4, 5], "user" => $user->append('is_admin')->toArray()];
     return response()->json($result);
 });
 
