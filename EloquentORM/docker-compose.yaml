@@ -1,0 +1,49 @@
+services:
+  db:
+    image: bitnami/mariadb
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=viber
+    ports:
+      - "${DB_PORT}:3306"
+  db-admin:
+    image: phpmyadmin
+    ports:
+      - "${DB_ADMIN_PORT}:80"
+    depends_on:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      UPLOAD_LIMIT: 300M
+
+  # Backend Services
+
+  administrative-service:
+    image: bitnami/laravel:10.3.2
+    ports:
+      - "${ADMINISTRATIVE_SERVICE_PORT}:8000"
+    volumes:
+      - ../administrative-service:/app
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_PORT=${DB_PORT}
+      - DB_USERNAME=viber
+      - DB_DATABASE=${DB_DATABASE}
+
+  inventory-service:
+    image: bitnami/laravel:10.3.2
+    ports:
+      - "${INVENTORY_SERVICE_PORT}:8000"
+    volumes:
+      - ../inventory-service:/app
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_PORT=${DB_PORT}
+      - DB_USERNAME=viber
+      - DB_DATABASE=${DB_DATABASE}
